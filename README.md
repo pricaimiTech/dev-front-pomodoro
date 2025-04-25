@@ -17,7 +17,11 @@ Além de funcional, o projeto conta com um design agradável, modo claro/escuro 
 ## 🎨 Capturas de Tela
 💻 Layout no Modo Claro
 
+![modo claro](./docs/img/Captura%20de%20Tela%202025-04-25%20às%2015.30.02.png)
+
 🌓 Layout no Modo Escuro
+![modo escuro](./docs/img/Captura%20de%20Tela%202025-04-25%20às%2015.30.09.png)
+
 
 ## 🛠️ Tecnologias Utilizadas
 
