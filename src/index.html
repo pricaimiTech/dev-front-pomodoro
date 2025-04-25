@@ -1,0 +1,40 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pomodoro Timer</title>
+        <div class="theme-toggle-wrapper">
+            <button id="theme-toggle">🌙 Modo Escuro</button>
+        </div>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="timerLabel">Pomodoro Timer</h1>
+            </header>
+            <main>
+                <div class="settings">
+                    <label for="studyTime">Tempo de Estudo (min)</label>
+                    <input type="number" id="studyTime" value="50">
+                    <label for="breakTime">Tempo de Pausa (min)</label>
+                    <input type="number" id="breakTime" value="10">
+                </div>
+                <div class="timer-display">
+                    <span id="minutes">60</span><span>:</span><span id="seconds">00</span>
+                </div>
+                <div id="controls">
+                    <button id="start">Start Study</button>
+                    <button id="break">Start Break</button>
+                    <button id="reset">Reset</button>
+                </div>
+                <div class="statistics">
+                    <h2>Estatísticas</h2>
+                    <p>Sessões finalizadas: <span id="sessionsCompleted">0</span></p>
+                    <p>Tempo total focado: <span id="totalFocusTime">0</span></p>
+                </div>
+            </main>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

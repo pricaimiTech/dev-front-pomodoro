@@ -1,0 +1,187 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7797d, #FBD786, #C6FFDD); /* Gradiente pôr do sol */
+  margin: 0;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode{
+  background: linear-gradient(135deg, #2b1055, #6b2c91, #f775a8);
+  color: #f0f0f0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, border 0.3s;
+}
+
+body.dark-mode .container {
+  background-color: #3b3b3b;
+  border: 1px solid rgba(255,255,255, 0.2)
+}
+
+.timer-display {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #444;
+  transition: color 0.3s;
+}
+
+body.dark-mode h1 {
+  color: #fbd786
+}
+
+.timer-display {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+body.dark-mode span{
+  color: #fbd786
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 0  10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 5px;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.settings label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.settings input {
+  width: 60px;
+  font-size: 1rem;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.timer-display {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.controls button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.controls button:active {
+  background-color: #003f7f;
+}
+
+#reset {
+  background-color: #dc3545;
+}
+
+#reset:hover {
+  background-color: #b02a37;
+}
+
+#reset:active{
+  background-color: #7a1d25;
+}
+
+.statistics{
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.statistics h2{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #444
+}
+
+.statistics p{
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: center;
+  color:#666
+}
+
+body.dark-mode button#theme-toggle{
+  color: #fbd786
+}
+
+.theme-toggle-wrapper {
+  position: absolute; /* Torna o botão absoluto em relação ao body */
+  top: 10px; /* Distância do topo da página */
+  right: 20px; /* Alinhado à direita */
+  z-index: 10; /* Garante que o botão fique acima de outros elementos */
+}
+
+button#theme-toggle{
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+button#theme-toggle:hover{
+  color: #0056b3
+}
+
+body.dark-mode button#theme-toggle{
+  color: #fbd786
+}
